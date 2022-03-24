@@ -20,8 +20,8 @@
     <!-- Custom style -->
     <link rel="stylesheet" href="style.css">
 
-    <link rel="icon" type="image/x-icon" href="fav.ico">
-    <title>Whatsapp</title>
+    <!-- <link rel="icon" type="image/x-icon" href="fav.ico"> -->
+    <title>Email List</title>
 
 </head>
 <body>
@@ -29,7 +29,10 @@
         <div class="container-fluid p-3" id="app">
         <div class="row">
             <div class="col-12">
-
+                <h1>Emails:</h1>
+                <ol class="ps-5 pt-3">
+                    <li v-for="email in emails">{{email}}</li>
+                </ol>
             </div>
         </div>
         </div>
