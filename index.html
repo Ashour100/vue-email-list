@@ -23,21 +23,22 @@
     <!-- axiso -->
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
-    <!-- <link rel="icon" type="image/x-icon" href="fav.ico"> -->
+    <link rel="icon" type="image/x-icon" href="fav.ico">
+    
     <title>Email List</title>
 
 </head>
 <body>
     <main class="position-relative">
         <div class="container-fluid p-3" id="app">
-        <div class="row">
-            <div class="col-12">
-                <h1>Emails:</h1>
-                <ol class="ps-5 pt-3">
-                    <li v-for="email in emails">{{email}}</li>
-                </ol>
+            <div class="row">
+                <div class="col-12">
+                    <h1>Emails:</h1>
+                    <ol v-if="emails.length==10" class="ps-5 pt-3">
+                        <li v-for="email in emails">{{email}}</li>
+                    </ol>
+                </div>
             </div>
-        </div>
         </div>
     </main>
 
